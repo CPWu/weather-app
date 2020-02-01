@@ -20,9 +20,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location.',undefined)
         } else {
-            const currentTemp = body.currently.temperature
-            const willItRain = body.currently.precipProbability
-            callback(undefined,body.daily.data[0].summary + ' It is currently ' + currentTemp + ' degrees celsius out. There is ' + willItRain + '% chance of rain.')
+            callback(undefined,body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees celsius out. The high today is ' + body.daily.data[0].temperatureHigh + ' with a low of ' + body.daily.data[0].temperatureLow + '. There is ' + body.currently.precipProbability + '% chance of rain.')
         }
     })
 }
