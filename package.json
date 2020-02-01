@@ -1,11 +1,26 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPWu/weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CPWu/weather-app/issues"
+  },
+  "homepage": "https://github.com/CPWu/weather-app#readme",
+  "description": ""
 }
