@@ -1,3 +1,14 @@
+/**
+ * Copyright (c) 2020
+ * 
+ * geocoding module that will provide a latitutde and longtitude given a text based location.
+ * 
+ * @author Chun Wu <the.chun.wu@gmail.com>
+ * 
+ * Created: February 01, 2020
+ * 
+ */
+
 const request = require('request')
 
 const geocode = (address, callback) => {
